@@ -1,8 +1,10 @@
 name: CI Test
 
-on: [pull_request, workflow_dispatch, push]
-  pull_request:
+on:
+  - pull_request:
     branches: [ main ]
+  - workflow_dispatch:
+  - push:
 
 jobs:
   test:
